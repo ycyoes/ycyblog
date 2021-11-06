@@ -6,6 +6,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ * @description mybatis plus config
+ * @author ycyoes
+ * @version 2021-11-06 17:44
+ */
+
 @Configuration
 @EnableTransactionManagement
 @MapperScan("com.ycyoes.blog.mapper")
