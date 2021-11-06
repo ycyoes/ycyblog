@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author ycyoes
  * @since 2021-11-06
  */
-public interface BLOGervice extends IService<Blog> {
+public interface BlogService extends IService<Blog> {
 
 }
