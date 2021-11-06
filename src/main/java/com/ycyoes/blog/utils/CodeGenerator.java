@@ -31,7 +31,9 @@ public class CodeGenerator {
         gc.setOutputDir(projectPath + "/src/main/java");
         gc.setAuthor("ycyoes");
         gc.setOpen(false);
-        gc.setServiceName("%Service");
+        gc.setServiceName("%sService");
+        //是否覆盖已有文件
+        gc.setFileOverride(true);
         mpg.setGlobalConfig(gc);
 
         //数据源配置
@@ -84,6 +86,7 @@ public class CodeGenerator {
 
         //策略配置
         StrategyConfig strategyConfig = new StrategyConfig();
+//        strategyConfig.setNaming(NamingStrategy.no_change);
         strategyConfig.setNaming(NamingStrategy.underline_to_camel);
         strategyConfig.setEntityLombokModel(true);
         strategyConfig.setRestControllerStyle(true);
