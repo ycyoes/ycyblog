@@ -7,3 +7,12 @@ spring:
     password: root
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml
+ycyoes:
+  jwt:
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    expire: 604800
+    header: Authorization
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: 127.0.0.1:6379
