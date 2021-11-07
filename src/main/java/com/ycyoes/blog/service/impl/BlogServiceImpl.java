@@ -1,5 +1,8 @@
 package com.ycyoes.blog.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.ycyoes.blog.entity.Blog;
 import com.ycyoes.blog.mapper.BlogMapper;
 import com.ycyoes.blog.service.BlogService;
@@ -17,4 +20,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements BlogService {
 
+    @Override
+    public IPage page(Page page, Wrapper queryWrapper) {
+        return baseMapper.selectPage(page, queryWrapper);
+    }
 }
