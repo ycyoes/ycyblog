@@ -59,7 +59,7 @@ public class BlogController {
             temp = new Blog();
             temp.setUserId(ShiroUtil.getProfile().getId());
             temp.setCreateUser("system");
-            temp.setCrateDate(LocalDateTime.now());
+            temp.setCreateDate(LocalDateTime.now());
             temp.setStatus(0);
         }
 
