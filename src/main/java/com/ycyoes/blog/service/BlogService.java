@@ -15,5 +15,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2021-11-06
  */
 public interface BlogService extends IService<Blog> {
-    IPage page(Page page, Wrapper<Blog> queryWrapper);
+    IPage blogPage(Page page, Wrapper<Blog> queryWrapper);
 }

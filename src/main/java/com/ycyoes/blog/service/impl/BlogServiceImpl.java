@@ -21,7 +21,7 @@ import org.springframework.stereotype.Service;
 public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements BlogService {
 
     @Override
-    public IPage page(Page page, Wrapper queryWrapper) {
+    public IPage blogPage(Page page, Wrapper queryWrapper) {
         return baseMapper.selectPage(page, queryWrapper);
     }
 }
